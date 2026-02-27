@@ -9,23 +9,30 @@
         android:id="@+id/navigation_home"
         android:name="com.smartcare.ui.home.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_placeholder" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_telemedicine"
         android:name="com.smartcare.ui.telemedicine.TelemedicineFragment"
         android:label="Telemedicine"
-        tools:layout="@layout/fragment_placeholder" />
+        tools:layout="@layout/fragment_telemedicine" />
 
     <fragment
         android:id="@+id/navigation_pharmacy"
-        android:name="com.smartcare.ui.pharmacy.PharmacyFragment"
+        android:name="com.smartcare.ui.inventory.MedicineInventoryFragment"
         android:label="Pharmacy"
-        tools:layout="@layout/fragment_placeholder" />
+        tools:layout="@layout/fragment_medicine_inventory" />
 
     <fragment
         android:id="@+id/navigation_records"
-        android:name="com.smartcare.ui.records.RecordsFragment"
+        android:name="com.smartcare.ui.records.HealthRecordsFragment"
         android:label="Records"
-        tools:layout="@layout/fragment_placeholder" />
+        tools:layout="@layout/fragment_health_records" />
+
+    <fragment
+        android:id="@+id/navigation_symptoms"
+        android:name="com.smartcare.ui.symptoms.SymptomCheckerFragment"
+        android:label="Symptoms"
+        tools:layout="@layout/fragment_symptom_checker" />
+
 </navigation>

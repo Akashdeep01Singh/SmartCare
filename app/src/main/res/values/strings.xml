@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Smartcare</string>
+    <string name="app_name">SmartCare</string>
+
+    <!-- Dashboard/Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_consult">Consult</string>
+    <string name="nav_pharmacy">Pharmacy</string>
+    <string name="nav_records">Records</string>
+
+    <!-- Dashboard Services -->
+    <string name="service_symptoms">Check Symptoms</string>
+    <string name="service_telemedicine">Consult Doctor</string>
+    <string name="service_stock">Medicine Stock</string>
+    <string name="service_records">My Records</string>
+
+    <!-- Headers & Common -->
+    <string name="hospital_name">Nabha Civil Hospital</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_english">English</string>
+    <string name="language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="language_hindi">हिन्दी</string>
+
 </resources>

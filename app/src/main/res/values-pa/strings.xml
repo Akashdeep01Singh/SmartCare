@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ਸਮਾਰਟਕੇਅਰ</string>
+
+    <!-- Dashboard/Navigation -->
+    <string name="nav_home">ਮੁੱਖ ਪੰਨਾ</string>
+    <string name="nav_consult">ਸਲਾਹ</string>
+    <string name="nav_pharmacy">ਫਾਰਮੇਸੀ</string>
+    <string name="nav_records">ਰਿਕਾਰਡ</string>
+
+    <!-- Dashboard Services -->
+    <string name="service_symptoms">ਲੱਛਣਾਂ ਦੀ ਜਾਂਚ</string>
+    <string name="service_telemedicine">ਡਾਕਟਰ ਦੀ ਸਲਾਹ</string>
+    <string name="service_stock">ਦਵਾਈ ਦਾ ਸਟਾਕ</string>
+    <string name="service_records">ਮੇਰੇ ਰਿਕਾਰਡ</string>
+
+    <!-- Headers & Common -->
+    <string name="hospital_name">ਸਿਵਲ ਹਸਪਤਾਲ ਨਾਭਾ</string>
+    <string name="select_language">ਭਾਸ਼ਾ ਚੁਣੋ</string>
+    <string name="language_english">English</string>
+    <string name="language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="language_hindi">हिन्दी</string>
+
+</resources>

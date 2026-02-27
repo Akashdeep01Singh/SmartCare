@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,42 +10,36 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:layout_height="wrap_content">
 
-        <!-- Welcome Text -->
-        <TextView
-            android:id="@+id/tv_welcome_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ"
-            android:textColor="@color/teal_primary"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <!-- Language Switch Icon -->
+        <ImageView
+            android:id="@+id/ivLanguage"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Language"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_manage"
+            app:tint="@color/teal_primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-        <TextView
-            android:id="@+id/tv_welcome_subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="How can we help you today?"
-            android:textColor="@color/text_gray"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_welcome_title" />
-
-        <!-- Doctor Availability Card -->
+        <!-- Doctor Status Card -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_doctor_status"
-            style="?attr/materialCardViewElevatedStyle"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="@color/white_clinical"
             app:cardCornerRadius="16dp"
             app:cardElevation="6dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_welcome_subtitle">
+            app:layout_constraintTop_toBottomOf="@id/ivLanguage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,7 +53,7 @@
                     android:text="Nabha Civil Hospital Status"
                     android:textColor="@color/teal_primary"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -81,7 +76,7 @@
                         android:text="11 / 23 Doctors Available"
                         android:textColor="@color/text_dark"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
                 <TextView
@@ -90,32 +85,40 @@
                     android:layout_marginTop="8dp"
                     android:text="Live Status • Updated Just Now"
                     android:textColor="@color/text_gray"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
             </LinearLayout>
+
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- Services Title -->
         <TextView
             android:id="@+id/tv_services"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:text="Our Services"
             android:textColor="@color/text_dark"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_doctor_status" />
+            app:layout_constraintTop_toBottomOf="@id/card_doctor_status"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-        <!-- Dashboard Grid View -->
+        <!-- Dashboard Grid -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_dashboard"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@id/tv_services"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:listitem="@layout/item_dashboard_card"
-            tools:spanCount="2" />
+            tools:spanCount="2"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.core.widget.NestedScrollView>

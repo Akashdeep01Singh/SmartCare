@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्मार्टकेयर</string>
+
+    <!-- Dashboard/Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_consult">परामर्श</string>
+    <string name="nav_pharmacy">फार्मेसी</string>
+    <string name="nav_records">रिकॉर्ड</string>
+
+    <!-- Dashboard Services -->
+    <string name="service_symptoms">लक्षणों की जाँच</string>
+    <string name="service_telemedicine">डॉक्टर से सलाह</string>
+    <string name="service_stock">दवा का स्टॉक</string>
+    <string name="service_records">मेरे रिकॉर्ड</string>
+
+    <!-- Headers & Common -->
+    <string name="hospital_name">सिविल अस्पताल नाभा</string>
+    <string name="select_language">भाषा चुनें</string>
+    <string name="language_english">English</string>
+    <string name="language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="language_hindi">हिन्दी</string>
+
+</resources>
