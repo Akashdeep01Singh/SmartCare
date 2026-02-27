@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/white_clinical"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    style="?attr/materialCardViewElevatedStyle">
+
+    <!-- Red Banner Line identifying PDF Document -->
+    <View
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/red_alert" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_pdf_icon"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_marginStart="8dp"
+            app:tint="@color/red_alert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_diagnosis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/text_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="General Checkup"
+            app:layout_constraintStart_toEndOf="@id/iv_pdf_icon"
+            app:layout_constraintEnd_toStartOf="@id/tv_date"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_doctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            tools:text="Dr. Singh (Nabha Civil Hospital)"
+            app:layout_constraintStart_toEndOf="@id/iv_pdf_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_diagnosis" />
+
+        <TextView
+            android:id="@+id/tv_prescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text_dark"
+            android:textSize="13sp"
+            tools:text="Paracetamol 500mg (1-0-1)\nRest for 3 days"
+            app:layout_constraintStart_toEndOf="@id/iv_pdf_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_doctor" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_primary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="12 Oct 2023"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
