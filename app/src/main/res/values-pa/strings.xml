@@ -21,4 +21,14 @@
     <string name="language_punjabi">ਪੰਜਾਬੀ</string>
     <string name="language_hindi">हिन्दी</string>
 
+    <!-- Symptom Checker -->
+    <string name="sryptom_fever">ਬੁਖਾਰ</string>
+    <string name="symptom_cough">ਖਾਂਸੀ</string>
+    <string name="symptom_body_pain">ਸਰੀਰ ਦਰਦ</string>
+    <string name="symptom_headache">ਸਿਰਦਰਦ</string>
+    <string name="symptom_vomiting">ਉਲਟੀ</string>
+    <string name="symptom_dizziness">ਚੱਕਰ ਆਉਣੇ</string>
+    <string name="symptom_custom_hint">ਕੋਈ ਹੋਰ ਲੱਛਣ ਟਾਈਪ ਕਰੋ...</string>
+    <string name="action_analyze_symptoms">ਲੱਛਣਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰੋ (Analyze Symptoms)</string>
+
 </resources>

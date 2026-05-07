@@ -20,4 +20,16 @@
     <string name="language_punjabi">ਪੰਜਾਬੀ</string>
     <string name="language_hindi">हिन्दी</string>
 
+    <!-- Symptom Checker -->
+    <string name="symptom_checker_prompt_en">How are you feeling?</string>
+    <string name="symptom_checker_prompt_pa">ਤੁਸੀਂ ਕਿਵੇਂ ਮਹਿਸੂਸ ਕਰ ਰਹੇ ਹੋ?</string>
+    <string name="sryptom_fever">Fever</string>
+    <string name="symptom_cough">Cough</string>
+    <string name="symptom_body_pain">Body Pain</string>
+    <string name="symptom_headache">Headache</string>
+    <string name="symptom_vomiting">Vomiting</string>
+    <string name="symptom_dizziness">Dizziness</string>
+    <string name="symptom_custom_hint">Type another symptom...</string>
+    <string name="action_analyze_symptoms">Analyze Symptoms</string>
+
 </resources>
